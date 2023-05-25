@@ -9,4 +9,3 @@ const { todosHoc } = todos
 
 export const ProductListWithSearch = withSearch(ProductList, products);
 export const TodoListWithSearch = withSearch(TodoList, todosHoc)
-

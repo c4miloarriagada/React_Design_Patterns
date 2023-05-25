@@ -1,9 +1,14 @@
+import { useState } from "react";
+
 export const Todo = ({ title, completed }) => {
-  const handleChange = () => {};
+  const [checked, setChecked] = useState(completed)
+  const handleChange = () => {
+    setChecked(!checked)
+  };
   return (
     <div>
       <div>
-        <input type="checkbox" checked={completed} onChange={handleChange} />
+        <input type="checkbox" checked={checked} onChange={handleChange} />
         {title} 
       </div>
     </div>

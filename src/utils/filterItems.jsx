@@ -5,6 +5,6 @@ export const filterItems = (query, items) => {
         return items
     }
 
-    return items.filter((item)=> item.title.indexOf(query) === 0)
+    return items.filter((item)=> item.title.toLowerCase().indexOf(query) === 0)
 
 }

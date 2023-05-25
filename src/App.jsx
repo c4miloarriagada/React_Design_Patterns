@@ -2,6 +2,8 @@ import { ProductListWithSearch, TodoListWithSearch } from './HighOrderComponent(
 import { TodoContainer } from './PresentationalContainer/TodoContainer'
 
 import './App.css'
+import { Store } from './Provider/Store/Store'
+import { TodosView } from './Provider/TodosView/TodosView'
 
 
 
@@ -19,7 +21,14 @@ const App = () => {
     
     <h2>Presentational & Container</h2>
     <TodoContainer/>
-      
+    
+    <h2>Provider</h2>
+
+    <Store>
+      <TodosView/>
+    </Store>
+
+
     </div>
   )
 }

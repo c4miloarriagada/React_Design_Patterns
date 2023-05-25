@@ -4,6 +4,7 @@ import { filterItems } from "../../utils/filterItems"
 
 
 export const TodoList = ({ query, dataset }) => {
+
     const items = filterItems(query, dataset)
   return (
     <div>
